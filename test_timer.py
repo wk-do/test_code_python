@@ -9,10 +9,10 @@ class MyWindow(QMainWindow):
         super().__init__()
 
         # timer
-         self.timer = QTimer(self)
-         self.timer.start(1000)
-         # self.timer.timeout.connect(self.timeout)
-         self.timer.timeout.connect(self.timer_slot)
+        self.timer = QTimer(self)
+        self.timer.start(1000)
+        # self.timer.timeout.connect(self.timeout)
+        self.timer.timeout.connect(self.timer_slot)
 
 
     def timeout(self):
